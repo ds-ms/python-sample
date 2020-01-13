@@ -1,0 +1,16 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pythonsample 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pythonsample
+    spec:
+      containers:
+        - name: pythonsample
+          image: desattir.azurecr.io/pythonsample
+          ports:
+          - containerPort: 80
