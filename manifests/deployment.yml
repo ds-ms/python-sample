@@ -18,4 +18,4 @@ spec:
         - name: pythonsample 
           image: desattir.azurecr.io/pythonsample
           ports:
-          - containerPort: 80
+          - containerPort: 8000
